@@ -8,7 +8,11 @@ import Mycarosello from './component/carosello';
 import Boxlist from './component/boxlist';
 
 import { Routes, Route, Link } from "react-router-dom";
+
+/* pages */
 import Home from  "./pages/homepage";
+import Chisiamo from "./pages/chisiamo"
+
 {/* commento in JSX 
 function My_button(props){
   const [nomeStato, setStato] = useState(props.titolo);
@@ -20,7 +24,6 @@ return <button onClick={() => setStato('it')}> INGLESE </button>
 */}
 
 {/* <> */}
-
 
 
 function App() {
@@ -61,7 +64,7 @@ useEffect(() => {
 <div>
 <Routes>
         <Route path="/" element={<Home />} />
-       {/*  <Route path="about" element={<About />} /> */}
+       <Route path="Chisiamo" element={<Chisiamo />} />
       </Routes>
 
       </div>
